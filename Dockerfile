@@ -6,6 +6,8 @@ MAINTAINER jgilley@chegg.com
 RUN	apk --update --no-cache add \
 	make \
 	curl \
+        nodejs \
+        openssh-client \
 	git && \
 	rm -rf /var/cache/apk/* 
 
