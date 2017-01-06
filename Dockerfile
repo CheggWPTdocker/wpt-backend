@@ -1,13 +1,13 @@
-FROM cheggwpt/nginx-php7-office:0.0.3
+FROM cheggwpt/nginx-php7-office:0.0.5
 MAINTAINER jgilley@chegg.com
 
 # Install needed packages
 # our final app requires make, curl, and git
-RUN	apk --update --no-cache add \
-	make \
-	curl \
+RUN apk --update --no-cache add \
+        make \
+        curl \
         nodejs \
         openssh-client \
-	git && \
+        git && \
 	rm -rf /var/cache/apk/* 
 
