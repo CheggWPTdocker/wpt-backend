@@ -1,4 +1,4 @@
-FROM cheggwpt/nginx-php7-office:0.0.5
+FROM cheggwpt/nginx-php7-office:0.0.7
 MAINTAINER jgilley@chegg.com
 
 # Install needed packages
