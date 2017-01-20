@@ -11,3 +11,6 @@ RUN apk --update --no-cache add \
         git && \
 	rm -rf /var/cache/apk/* 
 
+# Add the files
+COPY container_confs /
+
