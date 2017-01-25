@@ -1,4 +1,4 @@
-FROM cheggwpt/php7-nginx-office:1.0.1
+FROM cheggwpt/php7-nginx-office:1.0.2
 MAINTAINER jgilley@chegg.com
 
 # Install needed packages
@@ -9,7 +9,7 @@ RUN apk --update --no-cache add \
         nodejs \
         openssh-client \
         git && \
-	rm -rf /var/cache/apk/* 
+	rm -rf /var/cache/apk/*
 
 # Add the files
 COPY container_confs /
