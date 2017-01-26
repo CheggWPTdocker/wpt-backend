@@ -10,7 +10,3 @@ RUN apk --update --no-cache add \
         openssh-client \
         git && \
 	rm -rf /var/cache/apk/*
-
-# Add the files
-COPY container_confs /
-
