@@ -37,17 +37,5 @@ RUN cd /tmp && \
 
 RUN rm -rf /var/cache/apk/*
 
-
-COPY start_statsd.sh /docker-init.d/
-COPY start_tideways.sh /docker-init.d/
-
-# COPY entrypoint.sh /
-
-#EXPOSE $TIDEWAYS_PORT_UDP/udp
-#EXPOSE $TIDEWAYS_PORT_TCP
-#EXPOSE 8125/udp
-#EXPOSE 8126
-#ENTRYPOINT ["/entrypoint.sh", "tideways-daemon"]
-
-#WORKDIR /statsd
-#ENTRYPOINT ["node", "node_modules/.bin/statsd-librato", "config.js"]
+# Add the files
+COPY container_confs /
