@@ -4,7 +4,7 @@ MAINTAINER jgilley@chegg.com
 # Statsd Liberato ENVs
 ENV DEBUG 1
 ENV librato_version 2.0.4
-ENV nodejs_version 6.9.5-r0
+ENV nodejs_version 6.10.0-r0
 ENV statsd_version master
 
 # Tideways ENVs
@@ -18,7 +18,7 @@ RUN apk --update --no-cache add wget \
 		make \
 		curl \
 		openssh-client \
-		nodejs=${nodejs_version} \
+		nodejs-npm=${nodejs_version} \
 		git
 
 RUN mkdir /statsd && \
