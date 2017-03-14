@@ -18,7 +18,7 @@ RUN apk --update --no-cache add wget \
 		make \
 		curl \
 		openssh-client \
-		nodejs=${nodejs_version} \
+		nodejs-npm=${nodejs_version} \
 		git
 
 RUN mkdir /statsd && \
