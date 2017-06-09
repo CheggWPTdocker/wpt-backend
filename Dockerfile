@@ -1,4 +1,4 @@
-FROM cheggwpt/php7-nginx-office:1.0.2
+FROM cheggwpt/php7-nginx-office:1.1.6
 MAINTAINER jgilley@chegg.com
 
 # Statsd Liberato ENVs
@@ -18,7 +18,7 @@ RUN apk --update --no-cache add wget \
 		make \
 		curl \
 		openssh-client \
-		nodejs-npm=${nodejs_version} \
+		nodejs \
 		git
 
 RUN mkdir /statsd && \
