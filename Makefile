@@ -1,5 +1,5 @@
 NAME = cheggwpt/wpt-backend
-VERSION = 1.1.8
+VERSION = 2.0.0
 
 .PHONY: all build test tag_latest release ssh
 
