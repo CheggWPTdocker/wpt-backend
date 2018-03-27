@@ -1,4 +1,5 @@
-FROM cheggwpt/php7-nginx-office:2.0.0
+FROM cheggwpt/php7-nginx-office:2.0.2
+LABEL maintainer="Joel Gilley jgilley@chegg.com"
 
 # Statsd Liberato ENVs
 ENV DEBUG 1
